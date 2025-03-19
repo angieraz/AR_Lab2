@@ -1,0 +1,48 @@
+/* Загальні стилі */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: Monospace;
+  font-size: 16px;
+  line-height: 24px;
+  overscroll-behavior: none;
+}
+
+a {
+  color: #ff0;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+canvas {
+  display: block;
+}
+
+a, button, input, select {
+  pointer-events: auto;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
